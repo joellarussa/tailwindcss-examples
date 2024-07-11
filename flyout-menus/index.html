@@ -198,6 +198,11 @@
     .acw > :not([hidden]) ~ :not([hidden]) {
       border-color: rgb(17 24 39 / 0.05);
     }
+    .cib > :not([hidden]) ~ :not([hidden]) {
+      --tw-divide-x-reverse: 0;
+      border-right-width: calc(1px * var(--tw-divide-x-reverse));
+      border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+    }
   </style>
 </head>
 <body>
