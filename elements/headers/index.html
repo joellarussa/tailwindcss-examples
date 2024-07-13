@@ -42,6 +42,18 @@
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
     }
+
+    .grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .border-x {
+      border-left-width: 1px;
+      border-right-width: 1px;
+    }
+    .border-gray-900 {
+      border-color: rgb(17 24 39 / 0.05);
+    }
+
     .bik:hover {
       --tw-bg-opacity: 1;
       background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -71,16 +83,7 @@
     .bpl:focus-visible {
       outline-color: #4f46e5;
     }
-    .yq {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    .afk {
-      border-left-width: 1px;
-      border-right-width: 1px;
-    }
-    .agj {
-      border-color: rgb(17 24 39 / 0.05);
-    }
+
     .bif:hover {
       --tw-bg-opacity: 1;
       background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -474,7 +477,7 @@
               </div>
               <div class="bg-gray-50">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div class="grid yq divide-x divide-gray-900/5 afk agj">
+                  <div class="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900">
                     <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 bif">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 flex-none text-gray-400">
                         <path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clip-rule="evenodd"></path>
