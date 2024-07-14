@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./page-sections/footers/**/*.{html,js}",
+    "./page-sections/faq/**/*.{html,js}",
     "./elements/headers/**/*.{html,js}",
     "./elements/flyout-menus/**/*.{html,js}",
     "./elements/banners/**/*.{html,js}",
