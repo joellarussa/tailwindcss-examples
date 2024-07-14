@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./headers/**/*.{html,js}"
+    "./elements/headers/**/*.{html,js}",
+    "./elements/flyout-menus/**/*.{html,js}",
+    "./elements/banners/**/*.{html,js}",
+    "./elements/404/**/*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      transform: ['hover', 'focus']
+    },
   },
   plugins: [],
 }
