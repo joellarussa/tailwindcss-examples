@@ -15,7 +15,7 @@
  * by plugins.
  */
 @tailwind utilities;
- 
+
 /**
  * Use this directive to control where Tailwind injects the hover, focus,
  * responsive, dark mode, and other variants of each class.
