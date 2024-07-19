@@ -806,6 +806,10 @@ video {
   max-width: 28rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -1499,6 +1503,11 @@ video {
     padding-bottom: 6rem;
   }
 
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .sm\:pt-24 {
     padding-top: 6rem;
   }
@@ -1620,6 +1629,11 @@ video {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
