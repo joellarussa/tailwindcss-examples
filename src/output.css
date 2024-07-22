@@ -725,6 +725,10 @@ video {
   margin-left: 1.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -816,6 +820,10 @@ video {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-auto {
@@ -1215,6 +1223,10 @@ video {
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-base {
