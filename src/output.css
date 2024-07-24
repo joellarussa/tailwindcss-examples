@@ -1618,6 +1618,16 @@ video {
     padding-bottom: 8rem;
   }
 
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:px-3\.5 {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
   .sm\:pt-24 {
     padding-top: 6rem;
   }
