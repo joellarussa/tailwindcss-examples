@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../src/output.css" rel="stylesheet">
-  <link href="../src/compiled.css" rel="stylesheet">
+  <link href="../../src/output.css" rel="stylesheet">
+  <link href="../../src/compiled.css" rel="stylesheet">
   <title>Tailwind CSS Banners</title>
   <style>
     .fu {
-    margin: -0.75rem;
-  }
+      margin: -0.75rem;
+    }
+    .bpf:focus-visible {
+      outline-offset: -4px;
+    }
+    .cz {
+      left: max(-7rem,calc(50% - 52rem));
+    }
+    .ed {
+      z-index: -10;
+    }
+
+    @media (min-width: 640px) {
+      .cof::before {
+        content: var(--tw-content);
+        flex: 1 1 0%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -29,7 +45,7 @@
           <span aria-hidden="true">→</span>
         </a>
       </p>
-      <div class="flex ut zk">
+      <div class="flex flex-1 justify-end">
         <button type="button" class="fu p-3 bpf">
           <span class="sr-only">Dismiss</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-white">
@@ -44,7 +60,7 @@
 
   <!-- On brand -->
   <div class="bg-white" style="min-height: 16rem;">
-    <div class="flex items-center gap-x-6 ajw px-6 py-2.5 sm:px-3.5 cof">
+    <div class="flex items-center gap-x-6 bg-indigo-600 px-6 py-2.5 sm:px-3.5 cof">
       <p class="text-sm leading-6 text-white">
         <a href="#">
           <strong class="font-semibold">GeneriCon 2023</strong>
@@ -55,7 +71,7 @@
           <span aria-hidden="true">→</span>
         </a>
       </p>
-      <div class="flex ut zk">
+      <div class="flex flex-1 justify-end">
         <button type="button" class="fu p-3 bpf">
           <span class="sr-only">Dismiss</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-white">
@@ -70,11 +86,11 @@
 
   <!-- With background glow -->
   <div class="bg-white" style="min-height: 16rem;">
-    <div class="ab ec flex items-center gap-x-6 adn aiv px-6 py-2.5 sm:px-3.5 cof">
-      <div aria-hidden="true" class="aa cz dp ed vv xp beb">
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 cof">
+      <div aria-hidden="true" class="absolute cz top-1/2 ed vv xp beb">
         <div class="mv ta ams amz any bbh" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%);"></div>
       </div>
-      <div aria-hidden="true" class="aa da dp ed vv xp beb">
+      <div aria-hidden="true" class="absolute da top-1/2 ed vv xp beb">
         <div class="mv ta ams amz any bbh" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%);"></div>
       </div>
       <p class="text-sm leading-6 text-gray-900">
@@ -87,7 +103,7 @@
           <span aria-hidden="true">→</span>
         </a>
       </p>
-      <div class="flex ut zk">
+      <div class="flex flex-1 justify-end">
         <button type="button" class="fu p-3 bpf">
           <span class="sr-only">Dismiss</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-900">
@@ -102,18 +118,18 @@
 
   <!-- With link -->
   <div class="bg-white" style="min-height: 16rem;">
-    <div class="ab ec flex items-center gap-x-6 adn aiv px-6 py-2.5 sm:px-3.5 cof">
-      <div aria-hidden="true" class="aa cz dp ed vv xp beb">
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 cof">
+      <div aria-hidden="true" class="absolute cz top-1/2 ed vv xp beb">
         <div class="mv ta ams amz any bbh" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%);"></div>
       </div>
-      <div aria-hidden="true" class="aa da dp ed vv xp beb">
+      <div aria-hidden="true" class="absolute da top-1/2 ed vv xp beb">
         <div class="mv ta ams amz any bbh" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%);"></div>
       </div>
       <p class="text-sm leading-6 text-gray-900">
         GeneriCon 2023 is on June 7 – 9 in Denver. 
         <a href="#" class="adt font-semibold">Get your ticket&nbsp;<span aria-hidden="true">→</span></a>
       </p>
-      <div class="flex ut zk">
+      <div class="flex flex-1 justify-end">
         <button type="button" class="fu p-3 bpf">
           <span class="sr-only">Dismiss</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-900">
@@ -164,7 +180,7 @@
             <span aria-hidden="true">→</span>
           </a>
         </p>
-        <div class="flex ut zk">
+        <div class="flex flex-1 justify-end">
           <button type="button" class="fu p-3 bpf">
             <span class="sr-only">Dismiss</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-white">
