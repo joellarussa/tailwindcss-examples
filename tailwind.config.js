@@ -10,7 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      transform: ['hover', 'focus']
+      transform: ['hover', 'focus'],
+      aspectRatio: {
+        '577/310': '577 / 310',
+      },
     },
   },
   plugins: [],
