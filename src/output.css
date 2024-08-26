@@ -1723,6 +1723,11 @@ video {
   .sm\:ring-gray-900\/10 {
     --tw-ring-color: rgb(17 24 39 / 0.1);
   }
+
+  .sm\:before\:flex-1::before {
+    content: var(--tw-content);
+    flex: 1 1 0%;
+  }
 }
 
 @media (min-width: 768px) {
