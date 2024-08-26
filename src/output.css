@@ -1545,6 +1545,14 @@ video {
   outline-offset: 2px;
 }
 
+.focus-visible\:outline-offset-4:focus-visible {
+  outline-offset: 4px;
+}
+
+.focus-visible\:-outline-offset-4:focus-visible {
+  outline-offset: -4px;
+}
+
 .focus-visible\:outline-indigo-500:focus-visible {
   outline-color: #6366f1;
 }
