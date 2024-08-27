@@ -7,147 +7,6 @@
   <!-- <link href="../src/compiled.css" rel="stylesheet"> -->
   <title>Tailwind CSS Flyout Menus</title>
   <style>
-
-    .ek {
-      z-index: 50;
-    }
-    .bbo {
-      --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-      --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    }
-    .asj {
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem;
-    }
-    .ci {
-      left: 50%;
-    }
-    .ao {
-      left: 0px;
-      right: 0px;
-    }
-    .dn {
-      top: 0px;
-    }
-    .ed {
-      z-index: -10;
-    }
-    .auy {
-      padding-top: 4rem;
-    }
-    .aaq {
-      -moz-column-gap: 2rem;
-          column-gap: 2rem;
-    }
-    .aas {
-      row-gap: 2.5rem;
-    }
-    .arx {
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-    }
-    .awk {
-      font-weight: 500;
-    }
-    .axx {
-      --tw-text-opacity: 1;
-      color: rgb(107 114 128 / var(--tw-text-opacity));
-    }
-    .aan {
-      -moz-column-gap: 1rem;
-          column-gap: 1rem;
-    }
-    .zr {
-      gap: 2.5rem;
-    }
-    .uc {
-      max-width: 42rem;
-    }
-    .yy {
-      flex-direction: column;
-    }
-    .abb {
-      row-gap: 1.5rem;
-    }
-    .bcd {
-      --tw-ring-inset: inset;
-    }
-    .bcu {
-      --tw-ring-color: rgb(17 24 39 / 0.1);
-    }
-    .arc {
-      padding: 2rem;
-    }
-    .lj {
-      margin-top: 1.25rem;
-    }
-    .uk {
-      max-width: -moz-max-content;
-      max-width: max-content;
-    }
-    .vm {
-      --tw-translate-x: -50%;
-      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-    .aro {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .ayn {
-      --tw-text-opacity: 1;
-      color: rgb(79 70 229 / var(--tw-text-opacity));
-    }
-    .awi {
-      font-size: 0.75rem;
-      line-height: 1rem;
-    }
-    .ads {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .zu {
-      gap: 0.5rem;
-    }
-    .zy {
-      gap: 1.5rem;
-    }
-    .aam {
-      -moz-column-gap: 0.75rem;
-          column-gap: 0.75rem;
-    }
-    .arw {
-      padding-top: 0.375rem;
-      padding-bottom: 0.375rem;
-    }
-    .adz {
-      border-radius: 9999px;
-    }
-    .um {
-      max-width: -moz-min-content;
-      max-width: min-content;
-    }
-    .sk {
-      width: 14rem;
-    }
-    .ux {
-      flex-shrink: 1;
-    }
-    .aee {
-      border-radius: 0.75rem;
-    }
-    .ajx {
-      background-color: rgb(79 70 229 / 0.1);
-    }
-    .ark {
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-    }
-    .uq {
-      max-width: 24rem;
-    }
-
     .bsx[data-closed] {
       --tw-translate-y: -0.25rem;
       transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -281,7 +140,7 @@
 </head>
 <body>
     <!-- Stacked with footer actions -->
-    <div class="flex items-center justify-center bg-white arc">
+    <div class="flex items-center justify-center bg-white p-8">
       <div class="relative">
         <button type="button" class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
           <span>Solutions</span>
@@ -396,8 +255,8 @@
 
     <!-- Full-width two-columns -->
     <div class="bg-gray-50" style="min-height: 1032px;">
-        <div class="relative isolate ek bbo" data-headlessui-state="open" data-open="">
-            <div class="bg-white asj">
+        <div class="relative isolate z-50 shadow" data-headlessui-state="open" data-open="">
+            <div class="bg-white py-5">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                         Solutions
@@ -407,38 +266,38 @@
                     </button>
                 </div>
             </div>
-            <div class="absolute ao dn ed bg-white auy shadow-lg ring-1 ring-gray-900/5 transition bsx but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
-                <div class="mx-auto grid max-w-7xl aaq aas px-6 arx grid-cols-2 lg:px-8">
+            <div class="absolute inset-x-0 top-0 -z-10 bg-white pt-16 shadow-lg ring-1 ring-gray-900/5 transition bsx but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
+                <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-10 px-6 py-10 grid-cols-2 lg:px-8">
                     <div class="grid grid-cols-2 gap-x-6 chd">
                         <div>
-                            <h3 class="text-sm awk leading-6 axx">Engagement</h3>
+                            <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
                             <div class="mt-6 flow-root">
                                 <div class="-my-2">
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
                                         </svg>
                                         About
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path>
                                         </svg>
                                         Customers
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"></path>
                                         </svg>
                                         Press
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"></path>
                                         </svg>
                                         Careers
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
                                         </svg>
@@ -448,28 +307,28 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-sm awk leading-6 axx">Resources</h3>
+                            <h3 class="text-sm font-medium leading-6 text-gray-500">Resources</h3>
                             <div class="mt-6 flow-root">
                                 <div class="-my-2">
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
                                         </svg>
                                         Community
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path>
                                         </svg>
                                         Partners
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path>
                                         </svg>
                                         Guides
                                     </a>
-                                    <a href="#" class="flex aan py-2 text-sm font-semibold leading-6 text-gray-900">
+                                    <a href="#" class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-none text-gray-400">
                                             <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"></path>
                                         </svg>
@@ -479,17 +338,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid zr cgy grid-cols-2">
+                    <div class="grid gap-10 cgy grid-cols-2">
                         <h3 class="sr-only">Recent posts</h3>
-                        <article class="relative isolate flex uc yy aaq abb cgj dep det">
+                        <article class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 cgj dep det">
                             <div class="relative flex-none">
                                 <img alt="" src="../src/images/photo-1496128858413-b36217c2ce36.jpg" class="mp tu rounded-lg aio aqk ccz cdf dbk">
-                                <div class="absolute inset-0 rounded-lg ring-1 bcd bcu"></div>
+                                <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900"></div>
                             </div>
                             <div>
-                                <div class="flex items-center aan">
+                                <div class="flex items-center gap-x-4">
                                     <time datetime="2023-03-16" class="text-sm leading-6 text-gray-600">Mar 16, 2023</time>
-                                    <a href="#" class="relative z-10 adz bg-gray-50 px-3 arw awi awk text-gray-600 bif">Marketing</a>
+                                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 bif">Marketing</a>
                                 </div>
                                 <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
                                     <a href="#"><span class="absolute inset-0"></span>Boost your conversion rate</a>
@@ -497,15 +356,15 @@
                                 <p class="mt-2 text-sm leading-6 text-gray-600">Et et dolore officia quis nostrud esse aute cillum irure do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
                             </div>
                         </article>
-                        <article class="relative isolate flex uc yy aaq abb cgj dep det">
+                        <article class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 cgj dep det">
                             <div class="relative flex-none">
                                 <img alt="" src="../src/images/photo-1547586696-ea22b4d4235d.jpg" class="mp tu rounded-lg aio aqk ccz cdf dbk">
-                                <div class="absolute inset-0 rounded-lg ring-1 bcd bcu"></div>
+                                <div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900"></div>
                             </div>
                             <div>
-                                <div class="flex items-center aan">
+                                <div class="flex items-center gap-x-4">
                                     <time datetime="2023-03-10" class="text-sm leading-6 text-gray-600">Mar 10, 2023</time>
-                                    <a href="#" class="relative z-10 adz bg-gray-50 px-3 arw awi awk text-gray-600 bif">Sales</a>
+                                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-600 bif">Sales</a>
                                 </div>
                                 <h4 class="mt-2 text-sm font-semibold leading-6 text-gray-900">
                                     <a href="#"><span class="absolute inset-0"></span>How to use search engine optimization to drive sales</a>
@@ -523,7 +382,7 @@
 
     <!-- Stacked with footer list -->
     <div class="bg-white" style="min-height: 776px;">
-      <div class="flex items-center justify-center arc">
+      <div class="flex items-center justify-center p-8">
           <div class="relative" data-headlessui-state="open" data-open="">
               <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                   <span>Resources</span>
@@ -531,7 +390,7 @@
                       <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
                   </svg>
               </button>
-              <div class="absolute ci z-10 lj flex w-screen uk vm aro transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 95.3125px;">
+              <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 95.3125px;">
                   <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                       <div class="p-4">
                           <div class="bqi relative flex gap-x-6 rounded-lg p-4 bik">
@@ -568,23 +427,23 @@
                               </div>
                           </div>
                       </div>
-                      <div class="bg-gray-50 arc">
+                      <div class="bg-gray-50 p-8">
                           <div class="flex justify-between">
-                              <h3 class="text-sm font-semibold leading-6 axx">Recent posts</h3>
-                              <a href="#" class="text-sm font-semibold leading-6 ayn">See all <span aria-hidden="true">→</span></a>
+                              <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent posts</h3>
+                              <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">See all <span aria-hidden="true">→</span></a>
                           </div>
                           <ul role="list" class="mt-6 acf">
                               <li class="relative">
-                                  <time datetime="2023-03-05" class="block awi leading-6 text-gray-600">Mar 5, 2023</time>
-                                  <a href="#" class="block ads text-sm font-semibold leading-6 text-gray-900">Boost your conversion rate<span class="absolute inset-0"></span></a>
+                                  <time datetime="2023-03-05" class="block text-xs leading-6 text-gray-600">Mar 5, 2023</time>
+                                  <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">Boost your conversion rate<span class="absolute inset-0"></span></a>
                               </li>
                               <li class="relative">
-                                  <time datetime="2023-02-25" class="block awi leading-6 text-gray-600">Feb 25, 2023</time>
-                                  <a href="#" class="block ads text-sm font-semibold leading-6 text-gray-900">How to use search engine optimization to drive traffic to your site<span class="absolute inset-0"></span></a>
+                                  <time datetime="2023-02-25" class="block text-xs leading-6 text-gray-600">Feb 25, 2023</time>
+                                  <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">How to use search engine optimization to drive traffic to your site<span class="absolute inset-0"></span></a>
                               </li>
                               <li class="relative">
-                                  <time datetime="2023-02-21" class="block awi leading-6 text-gray-600">Feb 21, 2023</time>
-                                  <a href="#" class="block ads text-sm font-semibold leading-6 text-gray-900">Improve your customer experience<span class="absolute inset-0"></span></a>
+                                  <time datetime="2023-02-21" class="block text-xs leading-6 text-gray-600">Feb 21, 2023</time>
+                                  <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">Improve your customer experience<span class="absolute inset-0"></span></a>
                               </li>
                           </ul>
                       </div>
@@ -598,8 +457,8 @@
 
   <!-- Full-width -->
   <div class="bg-gray-50" style="min-height: 806px;">
-    <div class="relative isolate ek bbo" data-headlessui-state="open" data-open="">
-        <div class="bg-white asj">
+    <div class="relative isolate z-50 shadow" data-headlessui-state="open" data-open="">
+        <div class="bg-white py-5">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                     Solutions
@@ -609,9 +468,9 @@
                 </button>
             </div>
         </div>
-        <div class="absolute ao dn ed bg-white auy shadow-lg ring-1 ring-gray-900/5 transition bsx but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
-            <div class="mx-auto grid max-w-7xl zu px-6 py-6 grid-cols-2 gap-x-6 che ckj def dez lg:px-8 dql">
-                <div class="bqi relative -mx-3 flex zy rounded-lg p-3 text-sm leading-6 bik cgg p-6">
+        <div class="absolute inset-x-0 top-0 -z-10 bg-white pt-16 shadow-lg ring-1 ring-gray-900/5 transition bsx but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
+            <div class="mx-auto grid max-w-7xl gap-2 px-6 py-6 grid-cols-2 gap-x-6 che ckj def dez lg:px-8 dql">
+                <div class="bqi relative -mx-3 flex gap-6 rounded-lg p-3 text-sm leading-6 bik cgg p-6">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 bqs">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-600 bru">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"></path>
@@ -623,7 +482,7 @@
                         <p class="mt-1 text-gray-600">Get a better understanding of where your traffic is coming from</p>
                     </div>
                 </div>
-                <div class="bqi relative -mx-3 flex zy rounded-lg p-3 text-sm leading-6 bik cgg p-6">
+                <div class="bqi relative -mx-3 flex gap-6 rounded-lg p-3 text-sm leading-6 bik cgg p-6">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 bqs">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-600 bru">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"></path>
@@ -634,7 +493,7 @@
                         <p class="mt-1 text-gray-600">Speak directly to your customers with our engagement tool</p>
                     </div>
                 </div>
-                <div class="bqi relative -mx-3 flex zy rounded-lg p-3 text-sm leading-6 bik cgg p-6">
+                <div class="bqi relative -mx-3 flex gap-6 rounded-lg p-3 text-sm leading-6 bik cgg p-6">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 bqs">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-600 bru">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"></path>
@@ -645,7 +504,7 @@
                         <p class="mt-1 text-gray-600">Your customers' data will be safe and secure</p>
                     </div>
                 </div>
-                <div class="bqi relative -mx-3 flex zy rounded-lg p-3 text-sm leading-6 bik cgg p-6">
+                <div class="bqi relative -mx-3 flex gap-6 rounded-lg p-3 text-sm leading-6 bik cgg p-6">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 bqs">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-600 bru">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
@@ -689,7 +548,7 @@
 
   <!-- Simple with descriptions -->
   <div class="bg-white" style="min-height: 688px;">
-    <div class="flex items-center justify-center arc">
+    <div class="flex items-center justify-center p-8">
         <div class="relative" data-headlessui-state="open" data-open="">
             <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                 <span>Solutions</span>
@@ -697,8 +556,8 @@
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="absolute ci z-10 lj flex w-screen uk vm aro transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
-                <div class="w-screen uq flex-auto rounded-3xl bg-white p-4 text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
+                <div class="w-screen max-w-96 flex-auto rounded-3xl bg-white p-4 text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                     <div class="relative rounded-lg p-4 bik">
                         <a href="#" class="font-semibold text-gray-900">Blog<span class="absolute inset-0"></span></a>
                         <p class="mt-1 text-gray-600">Learn about tips, product updates and company culture</p>
@@ -729,7 +588,7 @@
 
   <!-- Two-column -->
   <div class="bg-white" style="min-height: 1060px;">
-    <div class="flex items-center justify-center arc">
+    <div class="flex items-center justify-center p-8">
         <div class="relative" data-headlessui-state="open" data-open="">
             <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                 <span>Solutions</span>
@@ -737,7 +596,7 @@
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="absolute ci z-10 lj flex w-screen uk vm aro transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
+            <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
                 <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dcr">
                     <div class="grid yn gap-x-6 aar p-4 grid-cols-2">
                         <div class="bqi relative flex gap-x-6 rounded-lg p-4 bik">
@@ -809,9 +668,9 @@
                         </div>
                     </div>
                     <div class="bg-gray-50 lg:px-8 py-6">
-                        <div class="flex items-center aam">
+                        <div class="flex items-center gap-x-3">
                             <h3 class="text-sm font-semibold leading-6 text-gray-900">Enterprise</h3>
-                            <p class="adz ajx ark arw awi font-semibold ayn">New</p>
+                            <p class="rounded-full bg-indigo-600 px-2.5 py-1.5 text-xs font-semibold text-indigo-600">New</p>
                         </div>
                         <p class="mt-2 text-sm leading-6 text-gray-600">Empower your entire team with even more advanced tools.</p>
                     </div>
@@ -825,7 +684,7 @@
   
   <!-- Simple -->
   <div class="bg-white" style="min-height: 388px;">
-    <div class="flex items-center justify-center arc">
+    <div class="flex items-center justify-center p-8">
         <div class="relative" data-headlessui-state="open" data-open="">
             <button class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" type="button" aria-expanded="true" data-headlessui-state="open active" data-open="" data-active="" aria-controls="headlessui-popover-panel-:r4:" id="headlessui-popover-button-:r2:">
                 <span>Solutions</span>
@@ -833,8 +692,8 @@
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="absolute ci z-10 lj flex w-screen um vm aro transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
-                <div class="sk ux aee bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-lg ring-1 ring-gray-900/5">
+            <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-min -translate-x-1/2 px-4 transition bta but bvg bvj bvm bvn" id="headlessui-popover-panel-:r4:" tabindex="-1" data-headlessui-state="open" data-open="" style="--button-width: 87.46875px;">
+                <div class="w-56 shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-lg ring-1 ring-gray-900/5">
                     <a href="#" class="block p-2 blj">Analytics</a>
                     <a href="#" class="block p-2 blj">Engagement</a>
                     <a href="#" class="block p-2 blj">Security</a>
